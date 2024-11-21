@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css
-   ">
-    <title>Document</title>
+    <title>Bookmark Manager</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>MY BOOKMARKS</h1>
-    <p>
-        <a href="https://github.com/Alex-joe-07?tab=repositories">MY GITHUB REPO</a><br>
-        <a href="https://youtube.com">youtube.com</a>
-
-    </p>
+    <div class="container">
+        <h1>Bookmark Manager</h1>
+        <form id="bookmarkForm">
+            <input type="text" id="siteName" placeholder="Site Name" required>
+            <input type="url" id="siteURL" placeholder="Site URL (e.g., https://example.com)" required>
+            <button type="submit">Add Bookmark</button>
+        </form>
+        <div id="bookmarksList"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
