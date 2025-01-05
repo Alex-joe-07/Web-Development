@@ -1,0 +1,16 @@
+array change
+pop 
+push
+shift
+unshift
+sort 
+splice
+reverse
+
+array not change
+tostring
+concat
+slice
+map
+filter
+reduce
