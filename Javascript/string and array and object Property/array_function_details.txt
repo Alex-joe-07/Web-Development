@@ -7,6 +7,8 @@ sort
 splice
 reverse
 
+object.assign //object property
+
 array not change
 tostring
 concat
@@ -14,3 +16,7 @@ slice
 map
 filter
 reduce
+flat
+array.from 
+
+spread //object property

@@ -39,11 +39,19 @@
 // console.log(a.concat(b));
 // console.log(b);
 
+// console.log("----------------------------another way concat ----------------------------------");
+// let dc = ["batman","superman"],mcu= ["ironman","hulk"]
+// console.log([...dc,...mcu]);
 
-// let c = [1,3,2,5,7,83,56]
-// console.log(c);
+// console.log("----------------------------flat method another way concat array ke andar array og cant change ----------------------------------");
+// let array = [1,23,[23,54,334,[34,54]]]
+// console.log(array.flat(Infinity));
+// console.log(array);
+
 
 // console.log("--------------------------------------------------------------");
+// let c = [1,3,2,5,7,83,56]
+// console.log(c);
 // console.log("sort method is used to sort element in ascending order it doesn't change the existing array. OG array changed ");
 // console.log(c.sort((a,b)=>(a-b)));
 // console.log(c);
@@ -53,16 +61,16 @@
 // console.log("--------------------------------------------------------------");
 // let d = [1,2,3,6,75,3,3]
 // console.log(d);
-// console.log("splice it is used to create the new array from the existing array means from index 2 se 4 aage Og array changed");
+// console.log("splice it is used to create the new array and remove the given array and only provide the remaining one from the existing array means from index 2 se 4 removed from og one . Og array changed");
 // console.log(d.splice(2,4));
 // console.log(d);
 
-// console.log("--------------------------------------------------------------");
-// let e = [4,1,2,34,6]
-// console.log("slice method is used to slice the array  and provide from index 2 to index 3 not index 4 coz last of does not take and slice cant change the OG one: ")
-// console.log(e);
-// console.log(e.slice(2,4));
-// console.log(e)
+console.log("--------------------------------------------------------------");
+let e = [4,1,2,34,6]
+console.log("slice method is used to slice the array  and provide from index 2 to index 3 not index 4 coz last of does not take and slice cant change the OG one: ")
+console.log(e);
+console.log(e.slice(2,4));
+console.log(e)
 
 // console.log("--------------------------------------------------------------");
 // let f = [1,2,3,4,5]
@@ -176,3 +184,15 @@ console.log(arr);
 // console.log(result);
 // console.log(filterArray);
 
+// console.log("----------------------------- ask the is array method ---------------------------------");
+let ui = "USERINTERFACE" //string
+// console.log(Array.isArray(ui));
+
+// console.log("----------------------------- from  method  convert the string in to array og cant change---------------------------------");
+console.log(Array.from(ui));
+console.log(ui);
+
+console.log("**********************************array of method is used to convert multiple variable in too array ******************************");
+
+let a =1 ,b =3 , c = 34;
+console.log(Array.of(a,b,c));
