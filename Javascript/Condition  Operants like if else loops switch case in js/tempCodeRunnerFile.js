@@ -1,9 +1,2 @@
-let b ={
-    "name" : "alex",
-    age: 17
-}
-for (const b in object) {
-    
-        const element = object[b];
-        console.log(key , element)
-    
+let number = 990
+number>=100 ? console.log("number is greater or equal"):console.log("not");

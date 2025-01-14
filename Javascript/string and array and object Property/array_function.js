@@ -131,7 +131,7 @@ console.log(arr);
 //     }
 // }
 
-// console.log("-----------------------------for of  loops---------------------------------");
+// console.log("-----------------------------for of is used to print array in easy ways  loops---------------------------------");
 // let v = [1,2,3,6,5]
 // console.log(v);
 
@@ -176,13 +176,21 @@ console.log(arr);
 // let maparr= OgArr.map((element)=> element**2)
 // console.log(maparr);
 // console.log(OgArr);
+// console.log("----------------------------- map  method use also used in store unique values in a array  ---------------------------------");
+let globe = new Map()
+globe.set('In',"India")
+globe.set('Pak',"Pakistan")
+globe.set('USA',"United States")
+
+console.log(globe);
 
 
-// console.log("----------------------------- filter method ---------------------------------");
-// let filterArray = [1,2,3,4,5,6,7,8]
-// let result = filterArray.filter((Element)=>Element>7 )
-// console.log(result);
-// console.log(filterArray);
+
+console.log("----------------------------- filter method og cant change to filter array ---------------------------------");
+let filterArray = [1,2,3,4,5,6,7,8]
+let result = filterArray.filter((Element)=>Element>7 )
+console.log(result);
+console.log(filterArray);
 
 // console.log("----------------------------- ask the is array method ---------------------------------");
 let ui = "USERINTERFACE" //string

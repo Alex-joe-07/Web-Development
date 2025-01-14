@@ -1,6 +1,5 @@
-let train = {
-    train_no:1323,
-    tname : "garib rath"
-}
-let {train_no}=train
-console.log(train_no);
+console.log("----------------------------- filter method ---------------------------------");
+let filterArray = [1,2,3,4,5,6,7,8]
+let result = filterArray.filter((Element)=>Element>7 )
+console.log(result);
+console.log(filterArray);
