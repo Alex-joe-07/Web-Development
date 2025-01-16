@@ -1,0 +1,42 @@
+
+
+JavaScript
+1. Selecting Elements:
+   - `document.querySelectorAll("li")`: Selects all `<li>` elements as a NodeList.
+   - `document.getElementsByClassName("list")`: Selects elements with the class `list`.
+   - `document.getElementById("alex")`: Selects the element with the ID `alex`.
+
+2. Modifying Content:
+   - `document.getElementById("alex").innerText = "Alex Joe";`: Changes the text content of the `h1` element with ID `alex`.
+
+3. Working with Children:
+   - `order.children`: Accesses all the child elements of the `ul` element with ID `parent`.
+   - `order.firstElementChild`: Gets the first child element of the `ul`.
+   - `order.lastElementChild`: Gets the last child element of the `ul`.
+
+4. Looping Through Children:
+   - `for (let i = 0; i < order.children.length; i++)`: Iterates through all children of the `ul` element and logs their inner HTML.
+
+5. Navigating DOM Nodes:
+   - `order.parentElement.textContent`: Accesses the parent element's text content.
+
+6. Mistakes or Learning Opportunities:
+   - Variable Assignment (`let variable`): 
+     ```javascript
+     let variable = document.getElementsByClassName("2class").nextElementSibling
+     ```
+     - `getElementsByClassName` returns an HTMLCollection, which doesn't have the `nextElementSibling` property directly. You'll need to access an individual element first, like this:
+       ```javascript
+       let variable = document.getElementsByClassName("2class")[0].nextElementSibling;
+       ```
+       This assumes there's only one element with the class `2class`.
+   - **Multiple `class` Attributes**:
+     ```html
+     <li id="identify" class="list" class="2class">Umair</li>
+     ```
+     - An element can't have multiple `class` attributes. Use a space-separated list in a single `class` attribute instead:
+       ```html
+       <li id="identify" class="list 2class">Umair</li>
+       ```
+
+By iterating and testing concepts like these, you're solidifying your understanding of the DOM and JavaScript interactions. Keep revising and experimenting—it's a great way to learn!

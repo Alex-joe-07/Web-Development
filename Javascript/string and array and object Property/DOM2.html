@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="parent">
+        <li class="falna">Umair</li>
+        <li>Uzair</li>
+        <li>Umaiza</li>
+        <li>Tanveer</li>
+        <li>Zahida</li>
+    </div>
+
+    <script>
+        let firstdiv = document.querySelector(".parent")
+        let firstli = document.querySelector(".falna")
+        // console.log(firstdiv);
+        // console.log(firstdiv.children);
+        // console.log(firstdiv.children[1].innerHTML);  
+        // for (let i = 0; i < firstdiv.children.length; i++) {
+        //     console.log(firstdiv.children[i].innerHTML);
+        //     firstdiv.children[i].style.color = 'green'
+        // }
+        // console.log(firstdiv.firstElementChild.innerHTML);//first element in the respected div
+        // console.log(firstdiv.lastElementChild.innerHTML);//last element in the respected div
+        // console.log(firstli.nextElementSibling.innerHTML);//target element siblings provided 
+        // console.log(firstli.parentElement.innerText); // target to parent element
+        // console.log(firstdiv.childNodes); // shows all childnodes
+
+        //================= Creating a element =================
+        let newelement = document.createElement('h1')
+        newelement.className = "Myclass"
+        newelement.id = "Myid"
+        // console.log(newelement.innerHTML = 'i am a boy');  //this is the way to insert text in the tag.
+        let con = document.createTextNode("Hello guys"); // Create a text node.
+        newelement.appendChild(con);
+        document.body.appendChild(newelement);
+console.log(newelement);
+
+
+
+    </script>
+</body>
+
+</html>
