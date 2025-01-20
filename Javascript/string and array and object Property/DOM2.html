@@ -19,18 +19,18 @@
     <script>
         let firstdiv = document.querySelector(".parent")
         let firstli = document.querySelector(".falna")
-        // console.log(firstdiv);
-        // console.log(firstdiv.children);
-        // console.log(firstdiv.children[1].innerHTML);  
-        // for (let i = 0; i < firstdiv.children.length; i++) {
-        //     console.log(firstdiv.children[i].innerHTML);
-        //     firstdiv.children[i].style.color = 'green'
-        // }
-        // console.log(firstdiv.firstElementChild.innerHTML);//first element in the respected div
-        // console.log(firstdiv.lastElementChild.innerHTML);//last element in the respected div
-        // console.log(firstli.nextElementSibling.innerHTML);//target element siblings provided 
-        // console.log(firstli.parentElement.innerText); // target to parent element
-        // console.log(firstdiv.childNodes); // shows all childnodes
+        console.log(firstdiv);
+        console.log(firstdiv.children);
+        console.log(firstdiv.children[1].innerHTML);  
+        for (let i = 0; i < firstdiv.children.length; i++) {
+            console.log(firstdiv.children[i].innerHTML);
+            firstdiv.children[i].style.color = 'green'
+        }
+        console.log(firstdiv.firstElementChild.innerHTML);//first element in the respected div
+        console.log(firstdiv.lastElementChild.innerHTML);//last element in the respected div
+        console.log(firstli.nextElementSibling.innerHTML);//target element siblings provided 
+        console.log(firstli.parentElement.innerText); // target to parent element
+        console.log(firstdiv.childNodes); // shows all childnodes
 
         //================= Creating a element =================
         let newelement = document.createElement('h1')

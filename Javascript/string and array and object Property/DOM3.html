@@ -8,22 +8,51 @@
 <body>
     <div class="parent">
         <li>JS</li>
+        <li>parera</li>
     </div>
     <script>
-       
-        console.log(document.querySelector("li").innerHTML);
-        function addlang(language) {
-            let listitem = document.createElement('li');  
-            
-            // Insert text into the <li> tag
-            listitem.innerHTML = language;  
+//         console.log(document.querySelector("li").innerHTML);
+//         function addlang(language) {
+//             let listitem = document.createElement('li');  
+//             // Insert text into the <li> tag
+//             listitem.innerHTML = language;  
+//             // Append the new <li> to the parent element
+//            document.querySelector(".parent").appendChild(listitem);
+          
+//         }
+//         function OptimizedAddLanguageMethod(language) {
+//             let listitem = document.createElement('li');  
+//             // Insert text into the <li> tag
+//             listitem.appendChild(document.createTextNode(language))  
+//             // Append the new <li> to the parent element
+//            document.querySelector(".parent").appendChild(listitem);
+          
+//         }
+//         addlang("Python")
+//         // addlang("Java")
+//         // OptimizedAddLanguageMethod("falnaa")
 
-            // Append the new <li> to the parent element
-            document.querySelector(".parent").appendChild(listitem);
+// console.log("////////////edit the element////////////////////");
+// let edited =document.querySelector(".parent").children[1].innerHTML = "Cpp";//this is the simple way 
+
+//this is the another way 
+// let edited =document.querySelector(".parent").children[1];//this is the simple way 
+// console.log( edited.innerHTML)
+// let create = document.createTextNode("li")
+// create.textContent ="cpp"
+// edited.replaceWith(create)
 
 
-        }
-        addlang(Umair)
+// console.log("/////another approch/// ");
+// let edit = document.querySelector(".parent").children[0];
+// console.log(edit);
+
+// edit.outerHTML = '<li>Golang</li>'
+
+console.log("****way to remove element****");
+
+document.querySelector('.parent').children[1].remove()  // 
+
     </script>
 </body>
 </html>

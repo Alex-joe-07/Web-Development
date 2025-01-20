@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        #clock{
+        padding: 10px;
+        width: 250px;
+margin-left: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>DIGITAL CLOCK</h1>
+    <button id="clock">Click Here... for Time</button>
+</body>
+
+
+<script>
+const clock = document.querySelector("#clock")
+clock.addEventListener('click',function (e) {
+    const digital = new Date().toLocaleTimeString();
+    clock.innerHTML =digital;
+})
+
+</script>
+</html>

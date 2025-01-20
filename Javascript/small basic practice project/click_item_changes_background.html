@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+
+            display: flex;
+            padding: 10vw;
+
+            justify-items: center;
+        }
+
+      
+button{
+    margin: 5px;
+}
+        #red {
+            background: red;
+            height: 100px;
+            width: 100px;
+        }
+
+        #green {
+            background: green;
+            height: 100px;
+            width: 100px;
+        }
+
+        #orange {
+            background: orange;
+            height: 100px;
+            width: 100px;
+        }
+
+        #blue {
+            background: rgb(0, 204, 255);
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <button id="red">
+            
+        </button>
+        <button id="green">
+            
+        </button>
+        <button id="orange">
+            
+        </button>
+        <button id="blue">
+            
+        </button>
+    </div>
+
+    <script>
+        const baap = document.querySelector(".parent")
+        const body = document.querySelector("body")
+       for (let i = 0; i < baap.children.length; i++) {
+        baap.children[i].addEventListener('click',function change_background(e) {
+            body.style.background = e.target.id;
+        });
+       }
+
+
+    </script>
+</body>
+
+</html>

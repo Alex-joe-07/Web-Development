@@ -1,5 +1,5 @@
 document.links     //check links to manupulates
-document.getElementById('idname')    //target using ID
+document.getElementById('idname')    //targeting using ID
 document.getElementById('idname').getAttribute('attribute name like class')    //get attruibutes using id
 document.getElementById('idname').setAttribute('class ', 'falana')    //change attribute class name by xyz to falana
 
@@ -30,8 +30,6 @@ item.forEach((element)=> {element.style.color = "white",element.style.background
 console.log("---------------HTML Collections-----------------");
 let list_name = document.getElementsByClassName("list")  // we cant insert loops in it doesn not contains.
 console.log(list_name);
-
-
 
 
 Array.from ("variable ")  //method is used to convert any type into Array.like nodelist , html collection for this all this node list wrap in variable  
