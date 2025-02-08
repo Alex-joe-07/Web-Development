@@ -1,8 +1,8 @@
 //this operator is used in object not in function.
-// function falam() {
-//     console.log(this);
-// }
-// falam()
+function falam() {
+    console.log(this);
+}
+falam()
 
 let a = {
     username: "Joe",

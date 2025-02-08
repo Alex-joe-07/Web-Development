@@ -33,7 +33,6 @@ console.log(typeof Math);
 // let rand = Math.random()
 // let minimum = 10 , maximum = 30;
 // // console.log(Math.floor(rand));
-
 // // console.log(Math.floor(rand*(maximum-minimum+1)));
 // console.log(Math.floor(rand*(maximum-(minimum+1)+1)+ minimum));
                         0.4 * 21

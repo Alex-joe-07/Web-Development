@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: rgb(48, 44, 44);">
+    <h1>hellow guyz.</h1>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="photoshop"
+                    src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt="photoshop"></li>
+            <li><img width="200px" id="japan"
+                    src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt=""></li>
+            <li><img width="200px" id="river"
+                    src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt=""></li>
+            <li><img width="200px" id="owl"
+                    src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt=""></li>
+            <li><img width="200px" id="prayer"
+                    src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+    </div>
+    <script>
+        //lagacy out dated
+        // attachEvent()   
+        // jQuery - on
+
+
+        //attributes we should know 
+        // type, timestamp, defaultPrevented                   
+        // target, toElement, srcElement, currentTarget,
+        // clientX, clientY, screenX, screenY
+        // altkey, ctrlkey, shiftkey, keyCode
+
+
+
+        //selecting first element using queryselector
+        //  document.querySelector("#photoshop").addEventListener('click',function (e) {
+        //     console.log(e);
+
+        //  })
+
+
+
+        // document.querySelector("#images").addEventListener('click', function (e) {
+        //     console.log(e.target);   // used to shows the html code / tag of the current element
+        //     console.log(e.target.tagName);  //tagname is used to locate the name to the content  
+        // }, false)
+
+
+        // is you target two other id to the single element one parent and one to child so it trans
+        // true  - capturing - first display parent then child
+        // false - bubbling  - first display child then parent
+
+        // example-
+        document.getElementById('images').addEventListener('click', function(e){
+            console.log("clicked inside the ul");
+        }, false)
+
+        document.getElementById('owl').addEventListener('click', function(e){
+            console.log("owl clicked");
+            e.stopPropagation()
+        }, true)
+
+        // ------------------------------------------
+
+        //it is the code of if i click on the image it will remove
+        // document.querySelector('#images').addEventListener('click', function (e) {
+        //     console.log(e.target.tagName);
+        //     if (e.target.tagName === 'IMG') {
+        //         console.log(e.target.id);
+        //         let removeIt = e.target.parentNode
+        //         removeIt.remove()
+        //     }
+
+
+        // })
+
+        // another way but headache one
+        //removeIt.parentNode.removeChild(removeIt)
+    </script>
+</body>
+
+</html>

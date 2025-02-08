@@ -2,10 +2,9 @@
 //     let b = amount / percentage;
 //     let  c = b*100;    
 //   return  console.log(c);
-    
 // }
-// valuation(1,100)
 
+// valuation(1,100)
 //console.log("Rest operator");
 // function add(...num2) {   //rest operator provide the array 
 //     return num2

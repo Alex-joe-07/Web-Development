@@ -1,2 +1,1 @@
-let date = new Date()
-console.log(typeof date);
+console.log(Math.max(1,2,3,9,0));

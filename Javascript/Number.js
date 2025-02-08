@@ -1,5 +1,5 @@
-    let score=100;
-    console.log(score);
+    // let score=100;
+    // console.log(score);
     
     // let record =new Number(500);
     // console.log(record );
@@ -8,10 +8,11 @@
     // console.log(record.toString());
     // console.log(record);
     
-    console.log("----------------------------------Number to fixed number  provide two digit  after decimal used in ecommmerce og cant change ---------------------------");
- 
-    console.log(record.toFixed(2));
-    console.log(record);
+    // console.log("----------------------------------Number to fixed number  provide two digit  after decimal used in ecommmerce og cant change ---------------------------");
+    
+    
+    // console.log(record.toFixed(2));
+    // console.log(record);
     
     
     // console.log("----------------------------------precision is used to provide the precise value only like 3 it provide only 3 digit from start sometime it provide the exponential value if you give number at like 4 digit and you give the value 3 og value cant change    ---------------------------");
